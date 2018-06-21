@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ショッピングカート</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+		    margin: 0;
+		    padding: 0;
+		    text-decoration: none;
+		    font-weight: normal;
+		    list-style: none;
+		    font-family: "LaoMN";
+		}
+
+		#price-list {
+			width: 700px;
+			height: 500px;
+			position: fixed;
+			float: right;
+			top: 50%;
+			margin: -100px 0 0 -700px;
+			left: 100%;
+			z-index: 10;
+		}
+
+		#bar{
+			width: 100%;
+			border-top: 5px #444 solid;
+		}
+
+		#price-list img{
+			width: 180px;
+			float: right;
+			margin: 50px;
+			cursor: pointer;
+		}
+
+		.clear-right{
+			clear: right;
+		}
+
+		.clear-left{
+			clear: left;
+		}
+
+		#price-list div{
+			font-size: 50px;
+			display: block;
+		}
+
+		.products {
+			margin-left: 50px;
+		}
+
+		#price-list span, .sum{
+			float: right;
+			margin-right: 50px;
+		}
+
+
+		#product-list{
+			width: 700px;
+			margin: 0 auto;
+		}
+
+		.left-products div, .right-products div, .centerleft-products div{
+			width: 400px;
+			height: 300px;
+			background: #FFF;
+			filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+			z-index: 8;
+		}
+
+		.left-products span, .right-products span, .centerleft-products span{
+			font-size: 80px;
+			position: relative;
+			top: 180px;
+		}
+
+		.left-products span, .centerleft-products span{
+			font-size: 80px;
+			position: relative;
+			top: 180px;
+			left: 50px;
+		}
+
+		.right-products span{
+			font-size: 80px;
+			position: relative;
+			top: 180px;
+			right: 50px;
+		}
+
+		.images{
+			float: left;
+		}
+
+		.left-products .images, .centerleft-products .images{
+			float: left;
+			margin: 100px 0;
+		}
+
+		.centerleft-products{
+			margin-left: 80px;
+		}
+
+		.right-products .images{
+			float: right;
+		}
+
+		.images img{
+			width: 200px;
+			display: block;
+			margin: 55px auto;
+		}
+
+
+	</style>
+</head>
+<body>
+	<section id="price-list">
+		<ul>
+			<li class="list">
+				<div class="products">hoge<span>$50.00</span></div>
+			</li>
+			<div class="clear-right"></div>
+			<li class="list">
+				<div class="products">piyo<span>$20.00</span></div>
+			</li>
+			<div class="clear-right"></div>
+			<div id="bar"></div>
+			<div class="clear-right"></div>
+			<li>
+				<div class="sum">$70.00</div>
+			</li>
+			<div class="clear-right"></div>
+		</ul>
+		<img src="./img/next-page.png">
+	</section>
+	<section id="product-list">
+		<ul>
+			<li class="left-products">
+				<div class="images"><img src="./img/hoge.png"></div>
+				<span class="images">×1</span>
+			</li>
+			<div class="clear-left"></div>
+
+
+			<li class="right-products">
+				<div class="images"><img src="./img/hoge.png"></div>
+				<span class="images">1×</span>
+			</li>
+			<div class="clear-right"></div>
+
+
+			<li class="centerleft-products">
+				<div class="images"><img src="./img/hoge.png"></div>
+				<span class="images">×1</span>
+			</li>
+			<div class="clear-left"></div>
+
+
+			<li class="left-products">
+				<div class="images"><img src="./img/hoge.png"></div>
+				<span class="images">×1</span>
+			</li>
+			<div class="clear-left"></div>
+
+
+			<li class="right-products">
+				<div class="images"><img src="./img/hoge.png"></div>
+				<span class="images">1×</span>
+			</li>
+			<div class="clear-right"></div>
+
+
+			<li class="centerleft-products">
+				<div class="images"><img src="./img/hoge.png"></div>
+				<span class="images">×1</span>
+			</li>
+			<div class="clear-left"></div>
+
+
+			<li class="left-products">
+				<div class="images"><img src="./img/hoge.png"></div>
+				<span class="images">×1</span>
+			</li>
+			<div class="clear-left"></div>
+
+
+			<li class="right-products">
+				<div class="images"><img src="./img/hoge.png"></div>
+				<span class="images">1×</span>
+			</li>
+			<div class="clear-right"></div>
+
+
+			<li class="centerleft-products">
+				<div class="images"><img src="./img/hoge.png"></div>
+				<span class="images">×1</span>
+			</li>
+			<div class="clear-left"></div>
+		</ul>
+	</section>
+	<div class="clear-right"></div>
+</body>
+</html>
